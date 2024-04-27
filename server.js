@@ -1,12 +1,11 @@
-//express web server
-const express = require ('express');
+const express = require('express');
 const app = express();
-
+const port = 3000
+ 
 app.get('/', (req, res) => {
-    res.send('Hello');
-})
+  res.send("Hello");
+});
 
-const port = 3000;
-
-app.listen(process.env.port || port);
-console.log('Web server is listening at port' + (process.env.port || port));
+app.listen(process.env.PORT || port, () => {
+    console.log('Web Server is listening at port ' + (process.env.PORT || port));
+  });
