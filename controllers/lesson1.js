@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+
 const ericRoute = app.get('/', (req, res) => {
     res.send("Eric Nord");
 });
