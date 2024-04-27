@@ -1,5 +1,6 @@
 const routes = require('express').Router();
-const lesson1Controller = require('./controllers/lesson1.js');
+console.log(__dirname);
+const lesson1Controller = require('../controllers/lesson1.js');
 
 routes.get('/', lesson1Controller.ericRoute);
 
