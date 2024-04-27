@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
+const lesson1Controller = require('./controllers/lesson1.js');
 const port = 3000;
-const lesson1Controller = require('./controllers/lesson1.js')
 
 app.get('/', lesson1Controller.ericRoute);
 
