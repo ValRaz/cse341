@@ -1,0 +1,30 @@
+[
+    {
+      "firstName": "Alex",
+      "lastName": "Rasmussen",
+      "email": "darkshadowwolf@gmail.com",
+      "favoriteColor": "red and black",
+      "birthday": "04-07-2009"
+    },
+    {
+      "firstName": "Andrea",
+      "lastName": "Conder",
+      "email": "andreaconder5@gmail.com",
+      "favoriteColor": "teal",
+      "birthday": "6-8-1994"
+    },
+    {
+      "firstName": "Brad",
+      "lastName": "Conder",
+      "email": "bradleyconder5@gmail.com",
+      "favoriteColor": "red",
+      "birthday": "8-2-1999"
+    },
+    {
+      "firstName": "Kat",
+      "lastName": "Wagner",
+      "email": "iamnoangel@gmail.com",
+      "favoriteColor": "purple",
+      "birthday": "7-21-1972"
+    }
+  ]
