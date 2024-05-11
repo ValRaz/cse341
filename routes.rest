@@ -1,4 +1,28 @@
+### Get All Contacts
 GET http://localhost:3001/contacts 
 
+### Get Single Contact
 GET http://localhost:3001/contacts/663670ce8bb93d593d2c5e82
+
+### Add Contact
+POST http://localhost:3001/contacts
+Content-Type: application/json
+
+{
+    "firstName": "Lori",
+    "lastName": "Dunkle",
+    "favoriteColor": "Blue",
+    "birthday": "11-05-1970"
+}
+
+### (PUT) Update Contact
+PUT http://localhost:3001/contacts
+
+//Production Testing
+###Get All Contacts
+
+###Get Single Contact
+
+//Post Put and Delete testing
+
 
