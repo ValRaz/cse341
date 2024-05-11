@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### (PUT) Update Contact
-PUT http://localhost:3001/contacts HTTP/1.1
+PUT http://localhost:3001/contacts/663fb786dc3890f0545cb861 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -27,6 +27,9 @@ Content-Type: application/json
     "favoriteColor": "Blue",
     "birthday": "11-05-1965"
 }
+
+### Delete Contact
+DELETE http://localhost:3001/contacts/663fb786dc3890f0545cb861 HTTP/1.1
 
 //Production Testing
 ###Get All Contacts
