@@ -62,14 +62,14 @@ const getOne = async (req, res, next) => {
     try {
       const collection = await mongodb.getDb().collection('Contacts');
   
-      const contact = await collection.findOne({ _id: new MongoClient().ObjectId(contactId) });
+      const contact = await collection.findOne({ _id: new ObjectId(contactId) });
   
       if (!contact) {
         return res.status(404).json({ message: 'Contact not found' });
       }
   
       const updateResult = await collection.updateOne(
-        { _id: new MongoClient().ObjectId(contactId) },
+        { _id: new ObjectId(contactId) },
         { $set: { firstName, lastName, email, favoriteColor, birthday } }
       );
   
@@ -90,7 +90,7 @@ const getOne = async (req, res, next) => {
     try {
       const collection = await mongodb.getDb().collection('Contacts');
   
-      const deleteResult = await collection.deleteOne({ _id: new MongoClient().ObjectId(contactId) });
+      const deleteResult = await collection.deleteOne({ _id: new ObjectId(contactId) });
   
       if (deleteResult.deletedCount === 0) {
         return res.status(404).json({ message: 'Contact not found' });
