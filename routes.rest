@@ -11,6 +11,7 @@ Content-Type: application/json
 {
     "firstName": "Lori",
     "lastName": "Dunkle",
+    "email": "loridunkle@hotmail.com",
     "favoriteColor": "Blue",
     "birthday": "11-05-1970"
 }
