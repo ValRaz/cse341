@@ -22,16 +22,16 @@ const getOne = async (req, res, next) => {
     });
   };
   
-  const { MongoClient } = require('mongodb');
+  const { ObjectId } = require('mongodb');
 
   const addContact = async (req, res, next) => {
     const { firstName, lastName, email, favoriteColor, birthday } = req.body;
   
-    if (!firstName || !lastName || !email) {
+    if (!firstName || !lastName || !email || !favoriteColor || !birthday) {
       return res.status(400).json({ message: 'Missing required fields' });
     }
   
-    const newContactId = new MongoClient().ObjectId();
+    const newContactId = new new ObjectId();
   
     const newContact = {
       _id: newContactId,
