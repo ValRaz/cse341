@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### (PUT) Update Contact
-PUT http://localhost:3001/contacts/663fb786dc3890f0545cb861 HTTP/1.1
+PUT http://localhost:3001/contacts/663fbe1d86dd8265b0ca67e7 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 ### Delete Contact
-DELETE http://localhost:3001/contacts/663fb786dc3890f0545cb861 HTTP/1.1
+DELETE http://localhost:3001/contacts/663fbe1d86dd8265b0ca67e7 HTTP/1.1
 
 //Production Testing
 ###Get All Contacts
@@ -53,7 +53,7 @@ Content-Type: application/json
 }
 
 ### Put Prod Update Contact test
-PUT https://cse341-2-xdft.onrender.com/contacts/663fbc38d4d28661510fbae6 HTTP/1.1
+PUT https://cse341-2-xdft.onrender.com/contacts/663fbe59d4d28661510fbae7 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -65,4 +65,4 @@ Content-Type: application/json
 }
 
 ### Delete Prod Delete Contact Test
-DELETE https://cse341-2-xdft.onrender.com/contacts/663fbc38d4d28661510fbae6 HTTP/1.1
+DELETE https://cse341-2-xdft.onrender.com/contacts/663fbe59d4d28661510fbae7 HTTP/1.1
