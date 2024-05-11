@@ -40,4 +40,29 @@ GET https://cse341-2-xdft.onrender.com/contacts/663670ce8bb93d593d2c5e82
 
 //Post Put and Delete testing
 
+### POST Prod Add Contact test
+POST https://cse341-2-xdft.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
 
+{
+    "firstName": "Lori",
+    "lastName": "Dunkle",
+    "email": "lorimdunkle@hotmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "11-05-1965"
+}
+
+### Put Prod Update Contact test
+PUT https://cse341-2-xdft.onrender.com/contacts/663fbc38d4d28661510fbae6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Lori",
+    "lastName": "Dunkle",
+    "email": "loridunkle@hotmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "11-05-1970"
+}
+
+### Delete Prod Delete Contact Test
+DELETE https://cse341-2-xdft.onrender.com/contacts/663fbc38d4d28661510fbae6 HTTP/1.1
