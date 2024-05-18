@@ -5,7 +5,7 @@
     "description": "Contact handler",
     "version": "1.0.0"
   },
-  "host": "https://cse341-2-xdft.onrender.com",
+  "host": "cse341-2-xdft.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -21,7 +21,7 @@
         }
       }
     },
-    "/contacts/": {
+    "/contacts": {
       "get": {
         "description": "",
         "produces": [
@@ -74,7 +74,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/contacts/id": {
       "get": {
         "description": "",
         "produces": [
