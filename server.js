@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 const mongodb = require('./db/dbconnect');
+const cors = require('cors');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger-output.json');
@@ -9,6 +10,7 @@ const swaggerSpec = require('./swagger-output.json');
 const port = process.env.PORT || 3001;
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use((req,res,next) => {
