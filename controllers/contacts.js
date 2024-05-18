@@ -1,7 +1,7 @@
 const mongodb = require('../db/dbconnect');
 
 const getOne = async (req, res, next) => {
-  const { ObjectId } = require('mongodb'); // Move this line here
+  const { ObjectId } = require('mongodb');
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
@@ -21,7 +21,7 @@ const getAll = async (req, res, next) => {
   });
 };
 
-const { ObjectId } = require('mongodb'); // Move this line here
+const { ObjectId } = require('mongodb');
 
 const addContact = async (req, res, next) => {
   const { firstName, lastName, email, favoriteColor, birthday } = req.body;
@@ -30,7 +30,7 @@ const addContact = async (req, res, next) => {
     return res.status(400).json({ message: 'Missing required fields' });
   }
 
-  const newContactId = new ObjectId(); // Corrected syntax
+  const newContactId = new ObjectId(); 
 
   const newContact = {
     _id: newContactId,
