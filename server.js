@@ -9,7 +9,7 @@ const swaggerSpec = require('./swagger-output.json');
 
 const port = process.env.PORT || 3001;
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors());
 
 app.use(bodyParser.json());
