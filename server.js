@@ -16,7 +16,7 @@ const corsOptions = {
 };
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use('/', require('./routes'));
 
