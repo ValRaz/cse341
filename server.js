@@ -12,7 +12,8 @@ const corsOptions = {
   origin: '*',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
-  optionsSuccessStatus: 204
+  optionsSuccessStatus: 204,
+  allowedHeaders: 'Content-Type'
 };
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
