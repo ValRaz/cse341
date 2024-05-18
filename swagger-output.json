@@ -5,10 +5,10 @@
     "description": "Contact handler",
     "version": "1.0.0"
   },
-  "host": "localhost:3001",
+  "host": "https://cse341-2-xdft.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
